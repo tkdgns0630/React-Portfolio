@@ -14,7 +14,7 @@ import React from "react";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
-import App from "./App";
+// import App from "./App";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +29,6 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.Fragment>
     <RouterProvider router={router} />
-    <App />
+    {/* <App /> */}
   </React.Fragment>
 );
