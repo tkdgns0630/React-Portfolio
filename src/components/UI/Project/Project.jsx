@@ -1,13 +1,10 @@
-import logo from "/vite.svg";
-
-function Project() {
+function ProjectItem({ image, name }) {
   return (
-    <div>
-      <img src={logo} width="300" height="300" alt="Hello" />
-      <h1>Name...</h1>
-      <div>Address...</div>
+    <div className="projectItem">
+      <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
+      <h1>{name}</h1>
     </div>
   );
 }
 
-export default Project;
+export default ProjectItem;

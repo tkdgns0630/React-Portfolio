@@ -8,7 +8,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./pages/HomePage";
 import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
+import ProjectList from "./components/ProjectList";
 import ErrorPage from "./pages/ErrorPage";
 import React from "react";
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="experience" element={<Experience />} />
-      <Route path="Projects" element={<Projects />} />
+      <Route path="Projects" element={<ProjectList />} />
     </Route>
   )
 );
