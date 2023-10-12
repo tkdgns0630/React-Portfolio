@@ -2,8 +2,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./Homepage.css";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="home">
       <div className="about">
@@ -13,9 +15,26 @@ function HomePage() {
             A full stack developer whos got passion for web development and
             software technologies.
           </p>
-          <FacebookIcon />
-          <GitHubIcon />
-          <LinkedInIcon />
+          <LinkedInIcon
+            style={{ cursor: "grab" }}
+            onClick={() => {
+              navigate(
+                "//https://www.linkedin.com/in/sanghun-michael-yun-ab436b168/"
+              );
+            }}
+          />
+          <FacebookIcon
+            style={{ cursor: "grab" }}
+            onClick={() => {
+              navigate("//https://www.facebook.com/sanghun.yun.9279");
+            }}
+          />
+          <GitHubIcon
+            style={{ cursor: "grab" }}
+            onClick={() => {
+              navigate("//https://github.com/tkdgns0630");
+            }}
+          />
         </div>
       </div>
       <div className="skills">

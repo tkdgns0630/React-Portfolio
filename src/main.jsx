@@ -11,6 +11,7 @@ import Experience from "./pages/Experience";
 import ProjectList from "./components/ProjectList";
 import ErrorPage from "./pages/ErrorPage";
 import React from "react";
+import ProjectDisplay from "./pages/ProjectDisaplay";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="experience" element={<Experience />} />
+      <Route path='/project/:id' element={<ProjectDisplay />} />
       <Route path="Projects" element={<ProjectList />} />
     </Route>
   )
