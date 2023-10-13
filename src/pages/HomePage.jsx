@@ -3,12 +3,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./Homepage.css";
 import { useNavigate } from "react-router-dom";
+import Yun from "../assets/SanghunYun.jpg";
+import { Image } from "semantic-ui-react";
 
 function HomePage() {
   const navigate = useNavigate();
   return (
     <div className="home">
       <div className="about">
+        <Image
+          src={Yun}
+          alt="Sanghun Yun"
+          style={{ height: "200px", borderRadius: "30%" }}
+        />
         <h2>Hi, my name is Michael</h2>
         <div className="prompt">
           <p>
