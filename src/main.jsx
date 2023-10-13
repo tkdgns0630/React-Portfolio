@@ -19,7 +19,7 @@ import RootLayout from "./layouts/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path="/React-Portfolio/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="experience" element={<Experience />} />
       <Route path="/project/:id" element={<ProjectDisplay />} />
