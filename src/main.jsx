@@ -12,6 +12,8 @@ import ProjectList from "./components/ProjectList";
 import ErrorPage from "./pages/ErrorPage";
 import React from "react";
 import ProjectDisplay from "./pages/ProjectDisaplay";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -23,7 +25,9 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/React-Portfolio/experience" element={<Experience />} />
       <Route path="/React-Portfolio/project/:id" element={<ProjectDisplay />} />
-      <Route path="/React-Portfolio/Projects" element={<ProjectList />} />
+      <Route path="/React-Portfolio/projects" element={<ProjectList />} />
+      <Route path="/React-Portfolio/resume" element={<Resume />} />
+      <Route path="/React-Portfolio/contact" element={<Contact />} />
     </Route>
   )
 );

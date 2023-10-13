@@ -25,9 +25,11 @@ function Navigation() {
         </button>
       </div>
       <div className="links">
-        <Link to="/"> Home</Link>
-        <Link to="/projects"> Projects</Link>
-        <Link to="/experience">Experience</Link>
+        <Link to="/React-Portfolio/"> Home</Link>
+        <Link to="/React-Portfolio/projects"> Projects</Link>
+        <Link to="/React-Portfolio/experience">Experience</Link>
+        <Link to="/React-Portfolio/contact">Contact</Link>
+        <Link to="/React-Portfolio/resume">Resume</Link>
       </div>
     </div>
   );

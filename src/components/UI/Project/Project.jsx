@@ -6,7 +6,7 @@ function ProjectItem({ image, name, id }) {
     <div
       className="projectItem"
       onClick={() => {
-        navigate("/project/" + id);
+        navigate("/React-Portfolio/project/" + id);
       }}
     >
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
