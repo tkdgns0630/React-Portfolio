@@ -21,9 +21,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/React-Portfolio/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="experience" element={<Experience />} />
-      <Route path="/project/:id" element={<ProjectDisplay />} />
-      <Route path="Projects" element={<ProjectList />} />
+      <Route path="/React-Portfolio/experience" element={<Experience />} />
+      <Route path="/React-Portfolio/project/:id" element={<ProjectDisplay />} />
+      <Route path="/React-Portfolio/Projects" element={<ProjectList />} />
     </Route>
   )
 );
